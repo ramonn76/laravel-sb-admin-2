@@ -23,7 +23,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
+Route::post('/upload-file', 'BillController@fileUpload')->name('fileUpload');
 
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+
+Route::get('/bills', function () {
+    return view('bills');
+})->name('bills');

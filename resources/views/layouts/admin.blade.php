@@ -71,6 +71,14 @@
             </a>
         </li>
 
+        <!-- Nav Item - Bills -->
+        <li class="nav-item {{ Nav::isRoute('about') }}">
+            <a class="nav-link" href="{{ route('bills') }}">
+            <i class="fas fa-solid fa-lightbulb"></i>
+                <span>{{ __('Bills') }}</span>
+            </a>
+        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
 
